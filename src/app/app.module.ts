@@ -10,6 +10,9 @@ import { MatCardModule } from '@angular/material/card';
 import { ChildItemComponent } from './event/child-item/child-item.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { ClientsComponent } from './clients/clients.component';
+import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -17,16 +20,20 @@ import { MatIconModule } from '@angular/material/icon';
     InputBindingComponent,
     ClientComponent,
     EventComponent,
-    ChildItemComponent
+    ChildItemComponent,
+    ClientsComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
     MatCardModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
