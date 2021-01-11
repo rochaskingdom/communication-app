@@ -13,6 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { ClientsComponent } from './clients/clients.component';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
+import { ItemClientComponent } from './clients/item-client/item-client.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MatInputModule } from '@angular/material/input';
     ClientComponent,
     EventComponent,
     ChildItemComponent,
-    ClientsComponent
+    ClientsComponent,
+    ItemClientComponent
   ],
   imports: [
     BrowserModule,
